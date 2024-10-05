@@ -8,7 +8,7 @@
       "endDate": "AOR 28, 2024"
     },
     "status": "Ongoing", 
-    "prizeMoney": 1000, 
+    "prizeMoney": "1000", 
     "livePlatforms": ["YouTube"] 
   }, {
     "matchID": "M002",
@@ -19,7 +19,7 @@
       "endDate": "APR 30, 2024"
     },
     "status": "pending", 
-    "prizeMoney": 1000, 
+    "prizeMoney": "1000", 
     "livePlatforms": ["YouTube","Twitch"] 
   }
 ];

@@ -1,4 +1,5 @@
 const Schedule=[{
+   "ittfScheduleID": "SCH002", 
     "eventName": "WTT Feeder series",
     "image": "https://example.com/images/WTT Feeder series.jpg",
     "dates": {
@@ -12,7 +13,7 @@ const Schedule=[{
       "playerFamilyName": "chuquin",
       "country": "China",
       "ranking": 1,
-      "rankingPoints": 28000,
+      "rankingPoints": 7925,
           "matches":
             {
               "matchID": "M001",
@@ -31,6 +32,7 @@ const Schedule=[{
     }
   },
   {
+    "ittfScheduleID": "SCH003", 
     "eventName": "WTT Feeder series",
     "image": "https://example.com/images/WTT Feeder series.jpg",
     "dates": {
@@ -44,7 +46,7 @@ const Schedule=[{
         "playerFamilyName": "chuquin",
         "country": "China",
         "ranking": 1,
-        "rankingPoints": 28000,
+        "rankingPoints": 7925,
           "matches":
             {
               "matchID": "M001",
@@ -62,6 +64,7 @@ const Schedule=[{
             }
     }
   },{
+    "ittfScheduleID": "SCH004", 
     "eventName": "WTT Feeder series",
     "image": "https://example.com/images/WTT Feeder series.jpg",
     "dates": {
@@ -75,7 +78,7 @@ const Schedule=[{
         "playerFamilyName": "chuquin",
         "country": "China",
         "ranking": 1,
-        "rankingPoints": 28000,
+        "rankingPoints": 7925,
           "matches":
             {
               "matchID": "M001",
@@ -94,6 +97,7 @@ const Schedule=[{
     },
     
   },{
+    "ittfScheduleID": "SCH005", 
     "eventName": "WTT Feeder Cappadocia",
     "image": "https://example.com/images/WTT Feeder series.jpg",
     "dates": {
@@ -102,12 +106,12 @@ const Schedule=[{
         "week": "15 May - 22 May 2024"
     },
       "players": {
-        "ittfID": "1004",
-        "playerGivenName": "WANG",
-        "playerFamilyName": "chuquin",
-        "country": "China",
-        "ranking": 1,
-        "rankingPoints": 28000,
+      "ittfID": "1004",
+      "playerGivenName": "Hugo",
+      "playerFamilyName": "Calderano",
+      "country": "Brazil",
+      "ranking": 4,
+      "rankingPoints": 6000,
           "matches":
             {
               "matchID": "M001",
@@ -125,20 +129,21 @@ const Schedule=[{
             }
     }
   },{
+    "ittfScheduleID": "SCH006", 
     "eventName": "WTT Feeder series",
     "image": "https://example.com/images/WTT Feeder series.jpg",
     "dates": {
-      "startDate": "May 15, 2024",
-      "endDate": "May 20, 2024",
-        "week": "15 May - 22 May 2024"
+      "startDate": "May 21, 2024",
+      "endDate": "May 26, 2024",
+        "week": "21 May - 26 May 2024"
     },
       "players": {
-        "ittfID": "1004",
-        "playerGivenName": "WANG",
-        "playerFamilyName": "chuquin",
-        "country": "China",
-        "ranking": 1,
-        "rankingPoints": 28000,
+       "ittfID": "1004",
+      "playerGivenName": "Hugo",
+      "playerFamilyName": "Calderano",
+      "country": "Brazil",
+      "ranking": 4,
+      "rankingPoints": 6000,
           "matches":
             {
               "matchID": "M001",
@@ -157,6 +162,7 @@ const Schedule=[{
     },
     
   },{
+    "ittfScheduleID": "SCH007", 
     "eventName": "WTT Feeder series",
     "image": "https://example.com/images/WTT Feeder series.jpg",
     "dates": {
@@ -166,11 +172,11 @@ const Schedule=[{
     },
       "players": {
         "ittfID": "1005",
-        "playerGivenName": "WANG",
-        "playerFamilyName": "chuquin",
-        "country": "China",
-        "ranking": 1,
-        "rankingPoints": 28000,
+      "playerGivenName": "Truls",
+      "playerFamilyName": "Möregårdh",
+      "country": "Sweden",
+      "ranking": 5,
+      "rankingPoints": 5500,
           "matches":
             {
               "matchID": "M001",
@@ -188,20 +194,21 @@ const Schedule=[{
             }
     }
   },{
+    "ittfScheduleID": "SCH008", 
     "eventName": "WTT Feeder series",
     "image": "https://example.com/images/wtt_feeder_cappadocia.jpg",
     "dates": {
-      "startDate": "May 15, 2024",
-      "endDate": "May 20, 2024",
-        "week": "15 May - 22 May 2024"
+      "startDate": "May 21, 2024",
+      "endDate": "May 26, 2024",
+        "week": "21 May - 26 May 2024"
     },
       "players": {
         "ittfID": "1005",
-        "playerGivenName": "WANG",
-        "playerFamilyName": "chuquin",
-        "country": "China",
-        "ranking": 1,
-        "rankingPoints": 28000,
+      "playerGivenName": "Truls",
+      "playerFamilyName": "Möregårdh",
+      "country": "Sweden",
+      "ranking": 5,
+      "rankingPoints": 5500,
           "matches":
             {
               "matchID": "M001",
