@@ -1,11 +1,13 @@
+ 
+ 
  const liveScores = [
   {
     "matchID": "M001",
     "eventName": " WTT Youth Contender Spa 2024",
     "image": "https://example.com/images/WTT_Youth_Contender.jpg",
     "dates": {
-      "startDate": "APR 22, 2024",
-      "endDate": "AOR 28, 2024"
+      "startDate": new Date("APR 22, 2024").toJSON(),
+      "endDate": new Date("APR 28, 2024").toJSON(),
     },
     "status": "Ongoing", 
     "prizeMoney": "1000", 
@@ -15,8 +17,8 @@
     "eventName": "WTT Feeder series",
     "image": "https://example.com/images/WTT Feeder series.jpg",
     "dates": {
-      "startDate": "APR 22, 2024",
-      "endDate": "APR 30, 2024"
+      "startDate": new Date("APR 22, 2024").toJSON(),
+      "endDate": new Date("APR 30, 2024").toJSON(),
     },
     "status": "pending", 
     "prizeMoney": "1000", 

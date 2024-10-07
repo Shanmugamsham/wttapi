@@ -1,232 +1,113 @@
-const Schedule=[{
-   "ittfScheduleID": "SCH002", 
-    "eventName": "WTT Feeder series",
-    "image": "https://example.com/images/WTT Feeder series.jpg",
-    "dates": {
-      "startDate": "May 15, 2024",
-      "endDate": "May 20, 2024",
-       "week": "15 May - 22 May 2024"
-    },
-      "players": {
-     "ittfID": "1001",
+const countryCodeMap = {
+  "China": "CHN",
+  "Croatia": "CRO",
+};
+
+
+const Schedule = [{
+  "ittfScheduleID": "SCH002",
+  "eventName": "WTT Feeder series",
+  "image": "https://example.com/images/WTT Feeder series.jpg",
+  "dates": {
+    "startDate": new Date("May 15, 2024").toJSON(),
+    "endDate": new Date("May 20, 2024").toJSON(),
+    "week": `${new Date("May 15, 2024").toJSON()} - ${new Date("May 20, 2024").toJSON()}`
+},
+  "players": {
+      "ittfID": "1001",
       "playerGivenName": "WANG",
       "playerFamilyName": "chuquin",
       "country": "China",
+      "countryCode": countryCodeMap["China"],
       "ranking": 1,
       "rankingPoints": 7925,
-          "matches":
-            {
-              "matchID": "M001",
-              "opponent": {
-                "ittfID": "1002",
-                "name": "Fan Zhendong",
-                "country": "China"
-              },
-              "date": "May 17, 2024",
-              "time": "15:15",
-              "result": "3-2",
-              "status": "Running",
-              "stage": "R32",
-              "venue": "Infinity Arena"
-            }
-    }
+      "matches": {
+          "matchID": "M001",
+          "opponent": {
+              "ittfID": "1002",
+              "name": "Fan Zhendong",
+              "country": "China",
+              "countryCode": countryCodeMap["China"]
+          },
+          "date": new Date("May 15, 2024").toJSON(),
+          "time": "15:15",
+          "result": "3-2",
+          "status": "Running",
+          "stage": "R32",
+          "venue": "Infinity Arena"
+      }
+  }
+},
+{
+  "ittfScheduleID": "SCH003",
+  "eventName": "WTT Feeder series",
+  "image": "https://example.com/images/WTT Feeder series.jpg",
+  "dates": {
+      "startDate": new Date("May 21, 2024").toJSON(),
+      "endDate": new Date("May 26, 2024").toJSON(),
+      "week": `${new Date("May 21, 2024").toJSON()} - ${new Date("May 26, 2024").toJSON()}`
   },
-  {
-    "ittfScheduleID": "SCH003", 
-    "eventName": "WTT Feeder series",
-    "image": "https://example.com/images/WTT Feeder series.jpg",
-    "dates": {
-      "startDate": "May 21, 2024",
-      "endDate": "May 26, 2024",
-       "week": "21 May - 26 May 2024"
-    },
-      "players": {
-        "ittfID": "1001",
-        "playerGivenName": "WANG",
-        "playerFamilyName": "chuquin",
-        "country": "China",
-        "ranking": 1,
-        "rankingPoints": 7925,
-          "matches":
-            {
-              "matchID": "M001",
-              "opponent": {
-                "ittfID": "23456",
-                "name": "Frane Kojic",
-                "country": "Croatia"
-              },
-              "date": "May 17, 2024",
-              "time": "15:15",
-              "result": "3-2",
-              "status": "Pending",
-              "stage": "R64",
-              "venue": "Infinity Arena"
-            }
-    }
-  },{
-    "ittfScheduleID": "SCH004", 
-    "eventName": "WTT Feeder series",
-    "image": "https://example.com/images/WTT Feeder series.jpg",
-    "dates": {
-      "startDate": "May 27, 2024",
-      "endDate": "May 21, 2024",
-        "week": "27 May - 21 May 2024"
-    },
-      "players": {
-        "ittfID": "1001",
-        "playerGivenName": "WANG",
-        "playerFamilyName": "chuquin",
-        "country": "China",
-        "ranking": 1,
-        "rankingPoints": 7925,
-          "matches":
-            {
-              "matchID": "M001",
-              "opponent": {
-                "ittfID": "1003",
-                "name": "Calderano",
-                "country": "China"
-              },
-              "date": "May 17, 2024",
-              "time": "15:15",
-              "result": "3-2",
-              "status": "Pending",
-              "stage": "R64",
-              "venue": "Infinity Arena"
-            }
-    },
-    
-  },{
-    "ittfScheduleID": "SCH005", 
-    "eventName": "WTT Feeder Cappadocia",
-    "image": "https://example.com/images/WTT Feeder series.jpg",
-    "dates": {
-      "startDate": "May 15, 2024",
-      "endDate": "May 20, 2024",
-        "week": "15 May - 22 May 2024"
-    },
-      "players": {
-      "ittfID": "1004",
-      "playerGivenName": "Hugo",
-      "playerFamilyName": "Calderano",
-      "country": "Brazil",
-      "ranking": 4,
-      "rankingPoints": 6000,
-          "matches":
-            {
-              "matchID": "M001",
-              "opponent": {
-                "ittfID": "23456",
-                "name": "Frane Kojic",
-                "country": "Croatia"
-              },
-              "date": "May 17, 2024",
-              "time": "15:15",
-              "result": "3-2",
-              "status": "Pending",
-              "stage": "R64",
-              "venue": "Infinity Arena"
-            }
-    }
-  },{
-    "ittfScheduleID": "SCH006", 
-    "eventName": "WTT Feeder series",
-    "image": "https://example.com/images/WTT Feeder series.jpg",
-    "dates": {
-      "startDate": "May 21, 2024",
-      "endDate": "May 26, 2024",
-        "week": "21 May - 26 May 2024"
-    },
-      "players": {
-       "ittfID": "1004",
-      "playerGivenName": "Hugo",
-      "playerFamilyName": "Calderano",
-      "country": "Brazil",
-      "ranking": 4,
-      "rankingPoints": 6000,
-          "matches":
-            {
-              "matchID": "M001",
-              "opponent": {
-                "ittfID": "1003",
-                "name": "Calderano",
-                "country": "China"
-              },
-              "date": "May 17, 2024",
-              "time": "15:15",
-              "result": "3-2",
-              "status": "Pending",
-              "stage": "R64",
-              "venue": "Infinity Arena"
-            }
-    },
-    
-  },{
-    "ittfScheduleID": "SCH007", 
-    "eventName": "WTT Feeder series",
-    "image": "https://example.com/images/WTT Feeder series.jpg",
-    "dates": {
-      "startDate": "May 15, 2024",
-      "endDate": "May 20, 2024",
-        "week": "15 May - 22 May 2024"
-    },
-      "players": {
-        "ittfID": "1005",
-      "playerGivenName": "Truls",
-      "playerFamilyName": "Möregårdh",
-      "country": "Sweden",
-      "ranking": 5,
-      "rankingPoints": 5500,
-          "matches":
-            {
-              "matchID": "M001",
-              "opponent": {
-                "ittfID": "23456",
-                "name": "Frane Kojic",
-                "country": "Croatia"
-              },
-              "date": "May 17, 2024",
-              "time": "15:15",
-              "result": "3-2",
-              "status": "Pending",
-              "stage": "R64",
-              "venue": "Infinity Arena"
-            }
-    }
-  },{
-    "ittfScheduleID": "SCH008", 
-    "eventName": "WTT Feeder series",
-    "image": "https://example.com/images/wtt_feeder_cappadocia.jpg",
-    "dates": {
-      "startDate": "May 21, 2024",
-      "endDate": "May 26, 2024",
-        "week": "21 May - 26 May 2024"
-    },
-      "players": {
-        "ittfID": "1005",
-      "playerGivenName": "Truls",
-      "playerFamilyName": "Möregårdh",
-      "country": "Sweden",
-      "ranking": 5,
-      "rankingPoints": 5500,
-          "matches":
-            {
-              "matchID": "M001",
-              "opponent": {
-                "ittfID": "1003",
-                "name": "Calderano",
-                "country": "China"
-              },
-              "date": "May 17, 2024",
-              "time": "15:15",
-              "result": "3-2",
-              "status": "Pending",
-              "stage": "R64",
-              "venue": "Infinity Arena"
-            }
-    },
-    
-  }]
+  "players": {
+      "ittfID": "1001",
+      "playerGivenName": "WANG",
+      "playerFamilyName": "chuquin",
+      "country": "China",
+      "countryCode": countryCodeMap["China"],
+      "ranking": 1,
+      "rankingPoints": 7925,
+      "matches": {
+          "matchID": "M001",
+          "opponent": {
+              "ittfID": "23456",
+              "name": "Frane Kojic",
+              "country": "Croatia",
+              "countryCode": countryCodeMap["CRO"]
+          },
+          "date": new Date("May 21, 2024").toJSON(),
+          "time": "15:15",
+          "result": "3-2",
+          "status": "Pending",
+          "stage": "R64",
+          "venue": "Infinity Arena"
+      }
+  }
+},
+{
+  "ittfScheduleID": "SCH004",
+  "eventName": "WTT Feeder series",
+  "image": "https://example.com/images/WTT Feeder series.jpg",
+  "dates": {
+      "startDate": new Date("May 27, 2024").toJSON(),
+      "endDate": new Date("May 21, 2024").toJSON(),
+      "week": "27 May - 21 May 2024"
+  },
+  "players": {
+      "ittfID": "1001",
+      "playerGivenName": "WANG",
+      "playerFamilyName": "chuquin",
+      "country": "China",
+      "countryCode": countryCodeMap["China"],
+      "ranking": 1,
+      "rankingPoints": 7925,
+      "matches": {
+          "matchID": "M001",
+          "opponent": {
+              "ittfID": "1003",
+              "name": "Calderano",
+              "country": "China",
+              "countryCode": countryCodeMap["China"],
+          },
+          "date": new Date("May 27, 2024").toJSON(),
+          "time": "15:15",
+          "result": "3-2",
+          "status": "Pending",
+          "stage": "R64",
+          "venue": "Infinity Arena"
+      }
+  }
+},
+]
+
 
 
   

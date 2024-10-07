@@ -1,3 +1,10 @@
+const countryCodeMap = {
+  "China": "CHN",
+    "Croatia": "CRO",
+    "Japan": "JPN",
+    "Brazil": "BRA",
+    "Sweden": "SWE",
+};
 
 
 const players= [
@@ -6,6 +13,7 @@ const players= [
       "playerGivenName": "WANG",
       "playerFamilyName": "chuquin",
       "country": "China",
+      "countryCode": countryCodeMap["China"],
       "ranking": 1,
       "rankingPoints":7925
     },
@@ -14,6 +22,7 @@ const players= [
       "playerGivenName": "Fan",
       "playerFamilyName": "Zhendong",
       "country": "China",
+      "countryCode": countryCodeMap["China"],
       "ranking": 2,
       "rankingPoints": 7500
     },
@@ -22,6 +31,7 @@ const players= [
       "playerGivenName": "Tomokazu",
       "playerFamilyName": "Harimoto",
       "country": "Japan",
+      "countryCode": countryCodeMap["Japan"],
       "ranking": 3,
       "rankingPoints": 6500
     },
@@ -30,6 +40,7 @@ const players= [
       "playerGivenName": "Hugo",
       "playerFamilyName": "Calderano",
       "country": "Brazil",
+      "countryCode": countryCodeMap["Brazil"],
       "ranking": 4,
       "rankingPoints": 6000
     },
@@ -38,6 +49,7 @@ const players= [
       "playerGivenName": "Truls",
       "playerFamilyName": "Möregårdh",
       "country": "Sweden",
+      "countryCode": countryCodeMap["Sweden"],
       "ranking": 5,
       "rankingPoints": 5500
     }
