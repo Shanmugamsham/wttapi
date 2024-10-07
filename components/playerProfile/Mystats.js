@@ -193,6 +193,7 @@ const data=[{
                 "year": 2023,
                 "pointsEarned": 5000,
                 "eventname": "2024 Singapore Smash, Singapore (SGP)", 
+                "expiresOn": new Date("2024-11-30").toJSON(),
                 "position": "Winner",
                 "week": 1,
                 "category": "md" 
@@ -202,7 +203,7 @@ const data=[{
                 "year": 2023,
                 "pointsEarned": 4000,
                 "eventname": "2023 Grand Smash, Doha (QAT)",  
-                "expiresOn": "2024-11-30",
+                "expiresOn":new Date("2024-11-30").toJSON(),
                 "position": "Runner-up",
                 "week": 5,
                 "category": "md" 
@@ -212,7 +213,7 @@ const data=[{
                 "year": 2023,
                 "pointsEarned": 3000,
                 "eventname": "2023 Champions, Tokyo (JPN)",  
-                "expiresOn": "2024-10-01",
+                "expiresOn":new Date("2024-10-01").toJSON(),
                 "position": "Semi-finalist",
                 "week": 10,
                 "category": "ms" 
@@ -222,7 +223,7 @@ const data=[{
                 "year": 2022,
                 "pointsEarned": 2500,
                 "eventname": "2022 Asian Championships, Bangkok (THA)",
-                "expiresOn": "2023-09-15",
+                "expiresOn":new Date("2023-09-15").toJSON(),
                 "position": "Finalist",
                 "week": 15,
                 "category": "ms" 
