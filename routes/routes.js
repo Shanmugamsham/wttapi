@@ -3,6 +3,8 @@ const { PlayerDetails, SinglePlayerDetails } = require('../components/PlayersCom
 const { ScheduleDetails, SchedulePlayerDetails } = require('../components/ScheduleComponent');
 const { EventDetails } = require('../components/EventNews');
 const { LiveDetails } = require('../components/LivescoreComponet');
+const { playerprofile } = require('../components/playerProfile/Myprofile');
+const { playerstats } = require('../components/playerProfile/Mystats');
 const router = express.Router();
 
 /**
@@ -122,5 +124,127 @@ router.get('/events', EventDetails);
  *                 type: object
  */
 router.get('/liveScore', LiveDetails);
+
+
+/**
+ *  @swagger
+ *  tags:
+ *    name: PlayerProfile
+ *    description: playerprofile apis
+ */
+/**
+
+
+
+/**
+ * @swagger
+ * /api/playerprofile:
+ *   get:
+ *     summary: Get player profile information
+ *     tags: [PlayerProfile]
+ *     description: Provide the ITTF ID to retrieve a specific player's profile, or get all player profiles if no ITTF ID is provided., with optional filters for country and specific data types.
+ *     parameters:
+ *       - in: query
+ *         name: ittfID
+ *         required: false
+ *         schema:
+ *           type: string
+ *         description: Provide the ITTF ID to retrieve a specific player's profile, or get all player profiles if no ITTF ID is provided.
+ *       - in: query
+ *         name: field
+ *         required: false
+ *         schema:
+ *           type: string
+ *         description: Comma-separated values of requested data types (playerProfile, contacts, personalDetails, sportsDetails) (optional)
+ *     responses:
+ *       200:
+ *         description: Player profile data retrieved successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 playerProfile:
+ *                   type: object
+ *                   description: Player profile details
+ *                 contacts:
+ *                   type: object
+ *                   description: Player's contact information
+ *                 personalDetails:
+ *                   type: object
+ *                   description: Personal details of the player
+ *                 sportsDetails:
+ *                   type: object
+ *                   description: Sports-related information of the player
+ *       400:
+ *         description: ITTF ID is required
+ *       404:
+ *         description: Player not found or country mismatch
+ */
+
+
+
+router.get("/playerprofile",playerprofile)
+
+
+/**
+ * @swagger
+ * /api/playerstats:
+ *   get:
+ *     summary: Get player statistics
+ *     tags: [PlayerProfile]
+ *     description: Retrieve detailed player statistics by ITTF ID, with optional filters for year, category, and data type (like career growth, rank changes, world ranking points breakdown, etc.).
+ *                  If `ittfID` is not provided, you will get an error message indicating the player is required.
+ *     parameters:
+ *       - in: query
+ *         name: ittfID
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: ITTF ID of the player (required).
+ *       - in: query
+ *         name: field
+ *         schema:
+ *           type: string
+ *           enum: [playerProfile, careerGrowth, rankChanges,winLossData, worldRankingPointsBreakdown]
+ *         description: The type of data you want to retrieve (optional).
+ *       - in: query
+ *         name: category
+ *         schema:
+ *           type: string
+ *         description: The category of the player's stats you want to filter by (optional).
+ *       - in: query
+ *         name: year
+ *         schema:
+ *           type: integer
+ *         description: Year for filtering career growth, rank changes, or world ranking points breakdown (optional).
+ *     responses:
+ *       200:
+ *         description: Successful response with player statistics.
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 playerProfile:
+ *                   type: object
+ *                   description: Player profile information.
+ *                 careerGrowth:
+ *                   type: object
+ *                   description: Career growth statistics.
+ *                 rankChanges:
+ *                   type: object
+ *                   description: Ranking changes over time.
+ *                 worldRankingPointsBreakdown:
+ *                   type: object
+ *                   description: Breakdown of world ranking points.
+ *       400:
+ *         description: Bad request. ITTF ID is required or invalid field provided.
+ *       404:
+ *         description: Player not found.
+ */
+
+
+router.get("/playerstats",playerstats)
 
 module.exports = router;
